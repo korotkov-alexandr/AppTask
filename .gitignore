@@ -1,0 +1,15 @@
+# common, IDE
+.idea/*
+*.sql
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.xml
+*.txt
+# local
+
+
+/include/vendor/
+

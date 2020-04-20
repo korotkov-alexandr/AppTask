@@ -1,0 +1,21 @@
+{
+    "name": "AppTasks",
+    "description": "AppTasks composer file",
+    "authors": [
+        {
+            "name": "AKorotokov"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AppTasks\\": "../application/"
+        },
+        "files": [
+            "../application/init.php"
+        ]
+    },
+    "require": {
+        "gabordemooij/redbean": "^v5.4.2",
+        "aura/auth": "^4.0.1"
+    }
+}

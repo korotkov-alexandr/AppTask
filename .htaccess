@@ -1,0 +1,14 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+#Если не файл и не дирректория, то перенаправляем на index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ index.php
+
+#RewriteRule ^(.*)$ /$1
+#RewriteRule (.*) index.php?$1 [L,QSA]
+
+#RewriteCond %{REQUEST_URI} !\.(css|gif|ico|jpg|js|png|swf|txt)$
+#Deny from All
